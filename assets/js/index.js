@@ -1,7 +1,7 @@
+var layer = layui.layer
 $(function () {
     getUserInfo();
 
-    var layer = layui.layer
     // 点击按钮，实现退出功能
     $('#btnLogout').on('click', function () {
         // 提示用户是否确认退出
