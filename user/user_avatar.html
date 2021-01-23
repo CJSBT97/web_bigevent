@@ -15,7 +15,6 @@
     <div class="layui-card">
         <div class="layui-card-header">更换头像</div>
         <div class="layui-card-body">
-            <input type="file" id="file" accept="image/png,image/jpeg" />
             <!-- 第一行的图片裁剪和预览区域 -->
             <div class="row1">
                 <!-- 图片裁剪区域 -->
@@ -39,16 +38,20 @@
             </div>
             <!-- 第二行的按钮区域 -->
             <div class="row2">
-                <button type="button" class="layui-btn">上传</button>
-                <button type="button" class="layui-btn layui-btn-danger">确定</button>
+                <input type="file" id="file" accept="image/png,image/jpeg" />
+                <button type="button" class="layui-btn" id="btnChooseImage">上传</button>
+                <button type="button" class="layui-btn layui-btn-danger" id="btnUpload">确定</button>
             </div>
         </div>
     </div>
 
 
     <script src="../assets/lib/jquery.js"></script>
+    <script src="../assets/lib/layui/layui.all.js"></script>
     <script src="../assets/lib/cropper/Cropper.js"></script>
     <script src="../assets/lib/cropper/jquery-cropper.js"></script>
+    <script src="../assets/js/baseAPI.js"></script>
+    <script src="../assets/js/user/user_avatar.js"></script>
 </body>
 
 </html>
